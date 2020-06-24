@@ -16,22 +16,19 @@ client.categories = fs.readdirSync("./commands/");
   require(`./handlers/${handler}`)(client);
 });
 client.on("ready", () => {
-  console.log(`${client.user.tag} Sudah Ashiap`);
-  function randStatus() {
-    let status = [
-      `np!help || Daddy >///<`,
-      `np!help || Hai Semua`,
-      `np!help || Bakaaa`,
-      `np!help || Ownernya Buaya`
-    ];
-    let rstatus = Math.floor(Math.random() * status.length);
-    client.user.setActivity(status[rstatus], {
-      type: "STREAMING",
-      url: "https://twitch.tv/rem_123"
+      console.log(
+        `Bot Is Online!`
+      );
+      let statuses = [`${prefix}help By Rikka`,`Memantau ${client.users.cache.size} Member`,`Owner Crocolicon`,`Daddy >///<`,`Always Watching All`]; //Your Status's
+      setInterval(function() {
+        let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
+        client.user.setActivity(STREAMING, {
+          type: "STREAMING",
+          url: "https://www.twitch.tv/rem_123"
+        });
+      }, 3000);
     });
-  }
-  setInterval(randStatus, 5000);
-});
+
 
 function is_url(str) {
   let regexp = /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
