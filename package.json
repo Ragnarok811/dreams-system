@@ -1,0 +1,40 @@
+{
+  "name": "Chocola",
+  "version": "0.0.1",
+  "description": "Bot Sederhana Menjadi Luar Biasa",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "ascii-table": "^0.0.9",
+    "fs": "^0.0.2",
+    "imdb-api": "^4.0.3",
+    "novelcovid": "^2.2.0",
+    "quick.db": "^7.1.1",
+    "request-promise-native": "^1.0.8",
+    "weather-js": "^2.0.0",
+    "mongoose": "^5.9.20",
+    "common-tags": "^1.8.0",
+    "node-fetch": "^2.6.0",
+    "superagent": "^5.2.2",
+    "ascii-art": "^2.5.0",
+    "https": "^1.0.0",
+    "node-superfetch": "^0.1.10"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/InfinityProject123/dreams-system"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
