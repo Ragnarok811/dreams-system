@@ -19,7 +19,7 @@ client.on("ready", () => {
       console.log(
         `Bot Is Online!`
       );
-      let statuses = [`${prefix}help By Rikka`,`Memantau ${client.users.cache.size} Member`,`Owner Crocolicon`,`Daddy >///<`,`Always Watching All`]; //Your Status's
+      let statuses = [`${default_prefix}help By Rikka`,`Memantau ${client.users.cache.size} Member`,`Owner Crocolicon`,`Daddy >///<`,`Always Watching All`]; //Your Status's
       setInterval(function() {
         let STREAMING = statuses[Math.floor(Math.random() * statuses.length)];
         client.user.setActivity(STREAMING, {
