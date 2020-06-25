@@ -2,8 +2,8 @@ const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "dm",
-  description: "Dm A Message To Your Mention User!",
-  usage: "[Prefix]dm",
+  description: "Dm Seseorang Yang Kamu Tag",
+  usage: "np!dm (tag orangnya) (isi pesan)",
   category: "fun",
   run: async (client, message, args) => {
     if (!message.guild.me.hasPermission("SEND_MESSAGES")) {
