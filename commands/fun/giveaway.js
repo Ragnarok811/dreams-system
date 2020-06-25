@@ -3,8 +3,8 @@ const ms = require('ms');
 module.exports={
     name: 'giveaway',
     aliases: ['ga'],
-    description: 'Create a simple giveaway',
-    usage: '<time> <channel> <prize>',
+    description: 'Buat Giveaway Sederhana',
+    usage: 'np!giveaway (waktu) (channel) (hadiah)',
     category: 'fun',
     run: async(bot,message,args)=>{
         if(!args[0]) return message.channel.send(`Hmm, Kamu Tidak Mensetting Waktu!`)
