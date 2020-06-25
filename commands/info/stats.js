@@ -4,13 +4,13 @@ module.exports = {
     name: "stats",
     aliases: ['s'],
     category: "info",
-    description: "Kalo Ada Masalah",
+    description: "UNtuk Mengecek Status Bot",
     run: async (client, message, args) => {
     const statsembed = new MessageEmbed()
       .setColor('RANDOM')
       .setTitle(`Stats ${client.user.username}`)
       .setThumbnail(client.user.avatarURL())
-      .addField("SERVERS", client.guilds.cache.size, true)
+      .addField("Server", "Weebsology")
       .addField("TOTAL MEMBERS", client.users.cache.size)
       .addField("STATUS", client.user.presence.status, true)
       .addField("UPTIME", client.uptime, true)
