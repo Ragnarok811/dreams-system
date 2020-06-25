@@ -5,8 +5,8 @@ module.exports = {
 name: "anime",
 aliases: ["an"],
   category: "info",
-  description: "Get anime information",
-  usage: "anime <anime_name>",
+  description: "Menampilkan Informasi Tentang anime",
+  usage: "np!anime (nama anime)",
   run: (client, message, args) => {
     
     
