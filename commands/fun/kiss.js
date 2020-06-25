@@ -3,7 +3,7 @@ const superagent = require('superagent');
 
 module.exports = {
   name: 'kiss',
-  description: 'Kissing Someone',
+  description: 'Memberikan Ciuman',
   usage: '[Prefix]kiss',
   category: 'fun',
   run: async (client, message, args) => {
