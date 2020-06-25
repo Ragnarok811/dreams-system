@@ -3,7 +3,7 @@ const superagent = require('superagent');
 
 module.exports = {
   name: 'hug',
-  description: 'Give Your Hug',
+  description: 'Memberikan Pelukan',
   usage: '[Prefix]hug',
   category: 'fun',
   run: async (client, message, args) => {
