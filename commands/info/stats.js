@@ -16,7 +16,6 @@ module.exports = {
       .addField("Uptime", client.uptime, true)
       .addField("Presence", client.user.presence.activities[0].name, true)
       .addField("Owner Bot", "Rikka#4606")
-      .setFooter(`Created By Chocola#4606`)
     message.channel.send(statsembed);
     }
 }
